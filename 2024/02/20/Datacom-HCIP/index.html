@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:published_time" content="2024-02-20T07:40:01.000Z">
-<meta property="article:modified_time" content="2024-02-23T01:40:13.408Z">
+<meta property="article:modified_time" content="2024-02-23T07:54:50.387Z">
 <meta property="article:author" content="凉风青叶">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/02/20/Datacom-HCIP/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
@@ -55,7 +55,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-02-23 09:40:13'
+  postUpdate: '2024-02-23 15:54:50'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -152,14 +152,17 @@
         }
       }
       detectApple()
-    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Welcome"><span class="site-name">Welcome</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Datacom-HCIP</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T07:40:01.000Z" title="发表于 2024-02-20 15:40:01">2024-02-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-02-23T01:40:13.408Z" title="更新于 2024-02-23 09:40:13">2024-02-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Datacom-HCIP"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>1、广播型网络运行ISIS路由器，DIS发送CSNP报文周期默认时间10s<br>2、点到点链路上LSP报文的重传间隔时间为5秒<br>3、多跳BFD控制报文目的端口4784<br>4、overwrite是覆盖<br>5、ISIS优先级是越大越优先，hello 的时间间隔默认是10&#x2F;3秒<br>6、先选BDR再选DR，priority越大越有先，相同比router-id，也是越大越优先<br>7、OSPF 邻居建不起来的原因<br>    1.hello间隔和dead 间隔不同；<br>    2.接口下OSPF网络类型不匹配。<br>    3.区域号码不一致；<br>    4.特殊区域（如stub，nssa等）区域类型不匹配；<br>    5.认证类型或密码不一致；<br>    6.路由器 router-id 相同；<br>    7.链路上的 MTU 不匹配；<br>    8.在broadcast链路上的子网掩码不匹配<br>    9.在MA 网络中，没有DR<br>    10.接口设置为 silent-interface<br>    1）当hello时间不同时是永远起不来邻居的<br>    2）当hello时间不同时会停留在INIT状态<br>    3）如果路由的优先级都改成了0，会停留在TWO-WAY状态<br>    4）当MTU值不同时会停留在EXSTART或EXCHANGE状态</p>
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Welcome"><span class="site-name">Welcome</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Datacom-HCIP</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-20T07:40:01.000Z" title="发表于 2024-02-20 15:40:01">2024-02-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-02-23T07:54:50.387Z" title="更新于 2024-02-23 15:54:50">2024-02-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Datacom-HCIP"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>1、广播型网络运行ISIS路由器，DIS发送CSNP报文周期默认时间10s<br>2、点到点链路上LSP报文的重传间隔时间为5秒<br>3、多跳BFD控制报文目的端口4784<br>4、overwrite是覆盖<br>5、ISIS优先级是越大越优先，hello 的时间间隔默认是10&#x2F;3秒<br>6、先选BDR再选DR，priority越大越有先，相同比router-id，也是越大越优先<br>7、OSPF 邻居建不起来的原因<br>    1.hello间隔和dead 间隔不同；<br>    2.接口下OSPF网络类型不匹配。<br>    3.区域号码不一致；<br>    4.特殊区域（如stub，nssa等）区域类型不匹配；<br>    5.认证类型或密码不一致；<br>    6.路由器 router-id 相同；<br>    7.链路上的 MTU 不匹配；<br>    8.在broadcast链路上的子网掩码不匹配<br>    9.在MA 网络中，没有DR<br>    10.接口设置为 silent-interface<br>    1）当hello时间不同时是永远起不来邻居的<br>    2）当hello时间不同时会停留在INIT状态<br>    3）如果路由的优先级都改成了0，会停留在TWO-WAY状态<br>    4）当MTU值不同时会停留在EXSTART或EXCHANGE状态</p>
 <p>8、路由策略：基于控制平面，会影响路由表选项。常用工具：Route-Policy、Filter-Policy</p>
 <p>9、策略路由：基于转发层面，不会影响RIB表，设备收到报文优先寻找策略路由进行匹配转发，匹配失败在查找FIB表转发。常用工具：Traffic-Filter、Traffic-Policy、Policy-Based-Route</p>
 <p>10、BGP的MED默认值是0，Local-preference默认值是100，手工聚合&gt;自动聚合&gt;network&gt;import</p>
 <p>11、Router ID用于唯一标识一台运行OSPF的路由器，如果没有手动配置Router ID，则使用Loopback最大的接口作为Router ID，如果没有配置Loopback，则使用最大接口ip地址</p>
 <p>12、2-way → ExStart → Exchange → Loading</p>
 <p>13、DR&#x2F;BDR的选举是非抢占式的</p>
-<p>14、Router LSA</p>
+<p>14、OSI定义的网络管理功能模型划分了多个区域，（数据管理）是不属于该功能区域的。</p>
+<p>15、路由器对LSA处理原则，如果收到了LSA损坏，例如Checksum错误，则不接收该LSA。如果本地路由器的LSDB已经存在某LSA，此时收到了更新的LSA，那么本地LSDB会被更新，并将更新的LSA泛洪出去。</p>
+<p>16、</p>
+<p>Router LSA</p>
 <p>​	1类LSA：路由器LSA(Router LSA)</p>
 <p>​		每台路由器都会产生。他描述了该路由器直连接口的信息。</p>
 <p>​	2类LSA：网络LSA(Network LSA)</p>
@@ -185,8 +188,48 @@
 <p>​	Totally Stub区域既不允许AS外部路由在本区域内传播，也不允许区域间路由在本区域内传播。</p>
 <p>​	Totally Stub区域内的路由器通过本区域ABR下发的缺省路由到达其他区域，以及AS外部</p>
 <p>​	与Stub区域的区别在于，在ABR上需要追加no-summary关键字</p>
-<p>​	</p>
 <p>stub只有有1类、2类、3类</p>
 <p>Totally stub只有1类、2类、3类、4类</p>
 <p>NSSA只有1类、2类、3类、7类</p>
+<p>IS-IS</p>
+<p>最多配置3个ip地址</p>
+<p>IS-IS的Hello报文可以具体细分为: L1 IIH ，L2 IIH ， P-2-P IIH<br>P-2-P IIH采用单播地址通信</p>
+<p>L1 IIH采用组播地址通信</p>
+<p>L2 IIH采用组播地址通信</p>
+<p>P-2-P IIH没有Priority字段</p>
+<p>默认情况下，普通路由的hello报文发送的时间间隔为10秒<br>DIS发送Hello数据包的时间间隔是普通路由的1&#x2F;3为3秒</p>
+<p>IS-IS两个邻居路由器只要相互交换HELLO数据包就认为相互形成了邻接关系；<br>而OSPF中，两台路由器进入2-Way状态则认为形成了邻接关系，但是只要进入Full状态才被认为进入完全邻接关系。</p>
+<p>IS-IS中，优先级为0的路由器亦然可以参与DIS选举；<br>而OSPF汇总优先级为0表示不参与选举。</p>
+<p>IS-IS中，DIS是基于抢占的；<br>OSPF中DR&#x2F;BDR已经选举不得抢占。</p>
+<p>优先级都是越大越好</p>
+<p>1、从IBGP对等体获得的BGP路由，BGP设备只发布给它的EBGP对等体。<br>2、从EBGP对等体获得的BGP路由，BGP设备发布给它所有EBGP和IBGP对等体。<br>3、当存在多条到达同一目的地址的有效路由时，BGP设备只将最优路由发布给对等体。<br>4、路由更新时，BGP设备只发送更新的BGP路由。<br>5、所有对等体发送的路由，BGP设备都会接收。</p>
+<p>IBGP 防环：<br>路由器从它的一个BGP对等体那里接收到的路由条目不会将该路由器再传递给其它IBGP对等体，这个原则被称为BGP水平分割<br>EBGP 防环：<br>当路由器从EBGP邻居收到BGP路由时，如果该路由的AS_Path中包含了自己的AS 编号，则该路由将会直接丢弃</p>
+<p>ORIGIN                             公认必须遵循<br>AS_PATH				 公认必须遵循<br>NEXT-HOP			 公认必须遵循<br>LOCAL_PREF			 公认可选<br>ATOMIC_AGGREGATE	 公认可选	<br>AGGERGATOR			 可选过渡<br>COMMUNITY			 可选过渡<br>MULTI_EXIT_DISC(MED)	 可选非过渡<br>ORIGINATOR_ID 		 可选非过渡<br>CLUSTER_LIST                    可选非过渡    	</p>
+<p>BGP邻居建立状态</p>
+<p>​	1、Idle初始状态：这是最开始的状态下，不接收邻居发送的连接请求，只有本地收到start请求后，BGP才开始尝试与其他BGP对等体进行TCP连接，并转至Connect状态。</p>
+<p>任何状态中，收到Notification报文或TCP断开和Error事件后，BGP都会转至Idle状态</p>
+<p>​	2、Connect状态：在Connect状态下，BGP启动重传定时器（Connect Retry),等待TCP连接，如果连接成功，那么BGP向对等体发送Opensent，并转至OpenSent状态。</p>
+<p>如果TCP连接失败，BGP转至Active（活跃）状态。</p>
+<p>如果重传定时器超时，停留在Connect状态。</p>
+<p>​	3、Active状态：BGP启动重传定时器，等待TCP完成连接</p>
+<p>如果TCP连接成功，那么BGP向对等体发送Open报文，并转至OpenSent状态。</p>
+<p>如果TCP连接失败，那么BGP转至Active（活跃）。</p>
+<p>如果连接定时器超时，BGP仍没有收到BGP对等体的响应，那么BGP会继续尝试连接，停留在Connect状态。</p>
+<p>​	4、OpenSent状态：BGP等待对等体的Open报文，并对收到的Open报文的AS号、版本号、认证码等进行检查。</p>
+<p>如果收到的Open报文正确，则发送Keepalive报文保持连接，并转至OpenConfirm状态。</p>
+<p>如果收到的Open报文有错误，则发送Notification报文，并转至Idle状态。</p>
+<p>​		</p>
+<p>​	5、OpenConfirm：BGP等待Keepalive或者Notification报文。如果是Keepalive报文，则转至Established状态。如果是Notification状态，则转至Idle状态。</p>
+<p>​	6、Established状态：连接正常，可以正常发送Update、Keepalive、Router-refresh和Notification报文。</p>
+<p>PIM：协议无关组播</p>
+<p>常用版本号是PIMv2，协议号103，组播地址224.0.0.13</p>
+<p>PIM状态刷新报文时间间隔是60s。</p>
+<p>PIM表老化时间默认是210s。</p>
+<p>DR是抢占的，越大越优先。</p>
+<p>构建SPT（扩散-剪枝）、嫁接、断言、状态刷新</p>
+<p>(S,G) S表示组播源，G表示组播组，*表示任意</p>
+<p>IGMP：因特网组管理协议</p>
+<p>ASM 任意源组播</p>
+<p>SSM 指定源组播</p>
+<p>D类组播地址范围：224.0.0.0 —-239.255.255.255</p>
 </article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">凉风青叶</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/02/20/Datacom-HCIP/">http://example.com/2024/02/20/Datacom-HCIP/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Welcome</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/02/08/vWLC%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/" title="vWLC安装手册"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">vWLC安装手册</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">凉风青叶</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/20/Datacom-HCIP/" title="Datacom-HCIP">Datacom-HCIP</a><time datetime="2024-02-20T07:40:01.000Z" title="发表于 2024-02-20 15:40:01">2024-02-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/08/vWLC%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/" title="vWLC安装手册">vWLC安装手册</a><time datetime="2024-02-08T02:42:50.000Z" title="发表于 2024-02-08 10:42:50">2024-02-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/05/hexo%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" title="hexo使用指南">hexo使用指南</a><time datetime="2024-02-05T10:57:29.000Z" title="发表于 2024-02-05 18:57:29">2024-02-05</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 凉风青叶</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
